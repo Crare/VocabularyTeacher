@@ -1,0 +1,13 @@
+<div *ngIf="word != null && show">
+  <br>
+  <h4>
+    <span *ngIf="guessForeingLanguage">{{word.firstlanguageWord}} = </span>
+    <span *ngIf="!guessForeingLanguage">{{word.secondLanguageWord}} = </span>
+  </h4>
+  <div *ngIf="choices != undefined">
+    <button class="btn btn-primary margin-right-10" *ngFor="let choice of choices" (click)="sendAnswer(choice)">
+      <span *ngIf="!guessForeingLanguage">{{choice.firstlanguageWord}}</span>
+      <span *ngIf="guessForeingLanguage">{{choice.secondLanguageWord}}</span>
+    </button>
+  </div>
+</div>

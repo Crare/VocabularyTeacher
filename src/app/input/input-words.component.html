@@ -1,0 +1,103 @@
+<app-helper-example [exampleLang1]="exampleWordsFin" [exampleLang2]="exampleWordsSwe" *ngIf="!testing"></app-helper-example>
+
+<div class="container" *ngIf="!testing">
+  <div class="row">
+    <div class="col-sm-12">
+      <button class="btn btn-info" (click)="useExampleWords(0)">Use example fin/swe words (set of 26 words)</button>
+      <div class="spacer"></div>
+      <button class="btn btn-info" (click)="useExampleWords(1)">Use other fin/swe set of words (set of 29 words)</button>
+    </div>
+    <div class="col-sm-6">
+      <div class="form-group">
+        <label class="bold" for="mylanguage">Words in your language</label><br>
+        <textarea class="form-control" id="mylanguage" rows="10" cols="50" [(ngModel)]="myLanguageWords"></textarea>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="form-group">
+        <label class="bold" for="learnLanguage">Words in language you would like to learn. (in same order)</label><br>
+        <textarea class="form-control" id="learnLanguage" rows="10" cols="50" [(ngModel)]="learnLanguageWords"></textarea>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="form-group">
+        <label for="wordCorrectTimes">Amount of times needed to get word correct to remove it from testing list.</label><br>
+        <input class="form-control" min="1" id="wordCorrectTimes" type="number" [(ngModel)]="amountOfTimesWordCorrect"><br>
+      </div>
+      <div class="form-group">
+        <label for="MultiselectChoises">Amount of choices shown in multi-select</label><br>
+        <input class="form-control" min="2" id="MultiselectChoises" type="number" [(ngModel)]="amountOfMultiselectChoises"><br>
+      </div>
+    </div>
+    <div class="col-sm-6">
+
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" [(ngModel)]="useOnlySecondLanguae">
+        <label class="form-check-label" for="defaultCheck1">
+          Only second language words
+        </label>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="form-check disabled {{guessWordsOrMultipleChoices === 'both' ? '' : 'disabled'}}">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" [(ngModel)]="everySecondGuessWord">
+        <label class="form-check-label" for="defaultCheck2">
+          Every second word given is writing and then multiple choices.
+        </label>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="both" checked [(ngModel)]="guessWordsOrMultipleChoices">
+        <label class="form-check-label" for="exampleRadios1">
+          Use both: writing words and multiple choices
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="onlyWriteWords" [(ngModel)]="guessWordsOrMultipleChoices">
+        <label class="form-check-label" for="exampleRadios2">
+          Use only writing words
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="onlyMultiChoiceSelection" [(ngModel)]="guessWordsOrMultipleChoices">
+        <label class="form-check-label" for="exampleRadios3">
+          Use only multiple choices
+        </label>
+      </div>
+
+    </div>
+    <div class="col-sm-6">
+      <button class="btn btn-danger" (click)="clearTextareas()">clear textareas</button>
+    </div>
+    <div class="col-sm-6">
+      <button class="btn btn-primary" (click)="startTesting()">Start testing</button>
+    </div>
+  </div>
+</div>
+
+<div class="container" *ngIf="testing">
+  <div class="row">
+    <div class="col-sm-12">
+      <h2>Testing words</h2>
+    </div>
+
+    <div class="col-sm-12">
+      <app-tester [everySecondGuessWord]="everySecondGuessWord" [useOnlyGuessWords]="useOnlyGuessWords" [amountOfMultiselectChoises]="amountOfMultiselectChoises" [amountOfTimesWordCorrect]="amountOfTimesWordCorrect" (test_result_emitter)="addToTestResults($event)" [words]="words"></app-tester>
+    </div>
+
+    <div class="col-sm-12" *ngIf="test_results.length > 0">
+      <h4>test results: </h4>
+      <ul>
+        <li *ngFor="let result of test_results">
+          <span *ngIf="result === 'correct'" style="color: green">{{result}}</span>
+          <span *ngIf="result === 'incorrect'" style="color: red">{{result}}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

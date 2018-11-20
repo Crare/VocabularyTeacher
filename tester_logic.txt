@@ -1,0 +1,6 @@
+test with writing (write only the language counterpart needed to learn)
+test with choosing (comaperd to either one of the languages)
+random order of words
+3(or N times, user chosen) times need to get correct to remove from unknown words
+
+Idea came from learning swedish vocabulary and Duolingo and Memrise just won't do it because different words(no IT-svenska words) and annoying adds.

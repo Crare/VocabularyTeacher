@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.center {
+  text-align: center;
+}
+
+.spacer {
+  width: 10px;
+  display: inline-block;
+}
+
+.margin-right-10 {
+  margin-right: 10px;
+}
+
+.good-score {
+  background-color: green;
+  color: white;
+  padding: 5px;
+}
+
+.bad-score {
+  background-color: red;
+  color: white;
+  padding: 5px;
+}
+
+.bold {
+  font-weight: 600;
+}

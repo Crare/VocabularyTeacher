@@ -1,0 +1,41 @@
+<div class="container" *ngIf="!testingDone">
+  words: {{words.length}}<br>
+  words left to get correct {{wordsTodo.length}}<br>
+</div>
+
+<div class="container" [hidden]="testingDone">
+  <app-guess-word #guess_word [show]="showGuessWord" [guessForeingLanguage]="guessForeingLanguage" (answerer)="sendAnswer($event)" [word]="selectedWord"></app-guess-word>
+  <app-select-word #select_word [show]="showSelectWord" [amountOfMultiselectChoises]="amountOfMultiselectChoises" [guessForeingLanguage]="guessForeingLanguage" (answerer)="sendAnswer($event)" [word]="selectedWord" [falseWords]="falseWords"></app-select-word>
+  <br>
+  <br>
+  <button class="btn btn-secondary" (click)="getRandomWord()">new word</button>
+  <br>
+  <br>
+  <button class="btn btn-success" (click)="goToResults()">go to results</button>
+</div>
+
+<div class="container" *ngIf="testingDone">
+  <h3>test done!</h3>
+  <p>Average score: {{averageScore}}</p>
+  <p>Total Score: {{totalScore}}</p>
+  <p>Time taken: {{duration}}</p>
+  <h4>Results for each word:</h4>
+  <div class="row" *ngFor="let word of words">
+    <div class="col-sm-4">{{word.firstlanguageWord}} == {{word.secondLanguageWord}}</div>
+    <div class="col-sm-2">got times right: {{word.gotRightTimes}}</div>
+    <div class="col-sm-2">got times wrong: {{word.gotWrongTimes}}</div>
+    <div class="col-sm-2">times checked answer: {{word.checkAnswerTimes}}</div>
+    <div class="col-sm-2">score:
+      <span *ngIf="word.score > averageScore" class="good-score"> {{word.score}}</span>
+      <span *ngIf="word.score === averageScore"> {{word.score}}</span>
+      <span *ngIf="word.score < averageScore" class="bad-score"> {{word.score}}</span>
+     </div>
+  </div>
+  <div class="row">
+    <p>
+      Score is calculated from by each right time gives 1 point, each wrong answer removes 1 point and each check of answer removes a half a point.
+      <br>
+      Don't get discouraged to check the answer though, that is the way you'll learn them. This score is only here to show your progress and motivate you try again.
+    </p>
+  </div>
+</div>
