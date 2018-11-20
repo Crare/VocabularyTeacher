@@ -1,4 +1,13 @@
-# Tester2
+# VocabularyTeacher
+
+Learn any language vocabulary, if you have the words, just add them here and this app tests them from you.
+
+## setup
+
+Install required modules with `npm install`. Run the project with `npm start`. App should be running at http://localhost:4200/
+
+
+------------- generated info below: -------------
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.6.
 
