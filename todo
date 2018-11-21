@@ -22,6 +22,7 @@ OMINAISUUS:
 * suosittelee pilkkomaan yli 20 sanan sarjan useampaan sarjaa, sillä kestää pitkään tehdä tuo läpi.
 * jos sanan saa osittain oikein, anna piste tai jotain? anna yrittää uudelleen. ehkä se oli typo.
 * exporttaa tulokset taulukkoon. csv-tiedostoksi vaikka.
+* compare to past results your score etc.
 
 BUG:
 * monivalinta tehtävä antaa samalla kielellä vastaukset kuin otsikko.
