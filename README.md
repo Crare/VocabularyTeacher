@@ -2,6 +2,11 @@
 
 Learn any language vocabulary, if you have the words, just add them here and this app tests them from you.
 
+![alt tag](https://github.com/Crare/VocabularyTeacher/blob/master/src/assets/img/write_words.png)
+
+![alt tag](https://github.com/Crare/VocabularyTeacher/blob/master/src/assets/img/select_word.png)
+
+
 ## setup
 
 Install required modules with `npm install`. Run the project with `npm start`. App should be running at http://localhost:4200/
