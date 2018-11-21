@@ -19,7 +19,7 @@ Learn any language vocabulary, if you have the words, just add them here and thi
 
 You need to install [npm](https://www.npmjs.com/get-npm) and [nodejs](https://nodejs.org/).
 
-Install required modules from terminal/commandline with command `npm install`. Run the project with `npm start`. App should be running at http://localhost:4200/
+Install required modules from terminal/commandline in project root directory with command `npm install`. Run the project with `npm start`. App should be running at http://localhost:4200/
 
 
 ------------- generated info below: -------------
