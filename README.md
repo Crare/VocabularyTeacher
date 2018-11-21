@@ -2,6 +2,10 @@
 
 Learn any language vocabulary, if you have the words, just add them here and this app tests them from you.
 
+**Input your own words or use existing sets. Any language possible, if you have the words for both languages.**
+
+<img src="https://github.com/Crare/VocabularyTeacher/blob/master/src/assets/img/input_words.png" width="1000">
+
 **writing test, randomly switching between both languages.**
 
 <img src="https://github.com/Crare/VocabularyTeacher/blob/master/src/assets/img/write_words.png" width="400">
