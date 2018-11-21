@@ -2,9 +2,13 @@
 
 Learn any language vocabulary, if you have the words, just add them here and this app tests them from you.
 
-![alt tag](https://github.com/Crare/VocabularyTeacher/blob/master/src/assets/img/write_words.png)
+**writing test, randomly switching between both languages.**
 
-![alt tag](https://github.com/Crare/VocabularyTeacher/blob/master/src/assets/img/select_word.png)
+<img src="https://github.com/Crare/VocabularyTeacher/blob/master/src/assets/img/write_words.png" width="400">
+
+**multiselection test, randomly switching between both languages.**
+
+<img src="https://github.com/Crare/VocabularyTeacher/blob/master/src/assets/img/select_word.png" width="600">
 
 
 ## setup
