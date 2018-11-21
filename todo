@@ -1,0 +1,45 @@
+TODO
+TODO:
+
+OMINAISUUS:
+* tähti sanoihin joita haluaa kerrata uudelleen.
+* resulteista valita sanat joita haluaa kerrata.
+* sanan ääntämys ääni? - joku rajapinta
+* sanan kääntäjä toiselle kielelle, ehdottaa käännöstä
+* tallentaa syötettyjä sanoja esim. localstorageen..?
+* sanojen exporttaus ja importtaus json tiedostosta.
+* useampi sanavaihtoehto vastaukseksi mahdollinen / + näyttää useampi vaihtoehto kysymyksessä
+* tallenna väärät vastaukset tuloksiin.
+* konvertoi pieniksi kirjaimiksi kaikki
+* nappi josta näkee edellisen vastauksen ja oikean vastauksen sille
+* katsele resultteja keskenkaiken
+* jos kolme kertaa peräkkäin tulee monivalinta tai kirjoitus, vaihda toiseen.
+* mahdollisuus tägää sana esim verbiksi, imperfektiksi.. ja näkyy eri lailla sisällössä. = eri väri teksti tai tausta
+* kolme oljenkortta, täytä sanan alkua 1-n kirjaimella. vihje: 'sana alkaa ...', piilota 1-n vääriä vastaus nappeja.
+* mahdollisuus antaa kirjoittaa vastaus myös monivalinnassa.?
+* pakota kirjoittamaan sana ainakin kerran oikein. nyt voi olla että sen näkee vain nappuloissa.
+* vaihtoehtoisesti näyttää samankaltaisia sanoja vastausvaihtoehdoiksi(ehkä liian sekoittava, mutta opettaa erottamaan samankaltaiset sanat)
+* suosittelee pilkkomaan yli 20 sanan sarjan useampaan sarjaa, sillä kestää pitkään tehdä tuo läpi.
+* jos sanan saa osittain oikein, anna piste tai jotain? anna yrittää uudelleen. ehkä se oli typo.
+* exporttaa tulokset taulukkoon. csv-tiedostoksi vaikka.
+
+BUG:
+* monivalinta tehtävä antaa samalla kielellä vastaukset kuin otsikko.
+* välillä ei näy kaikissa napeissa tekstejä
+
+MUUTA/VAIHDA:
+* korvaa servicellä ja observer objectilla:  wordchange
+* avoimen lähdekoodin = avoin lähdekoodi
+* asenta_a_ = installera
+* päivitä_ä_ = uppdatera
+* muistia = ett minne ?
+* surffata = nätsurfa ?
+* spam -> roskaposti  = skräppost
+* tvåfaktorsautenticering = kaksivaiheinen tunnistautuminen
+* hemsida verkkosivu, vaiko kotisivu?
+* tietoliikenneyhteys ei tietoliikenneyhteyden
+* näthandel
+* logaa in i vilosäge ?
+* laskentataulukko -> laskentaohjelma
+* hårddisk kiintolevy -> kovalevy?
+* skanneri kahteen kertaan?
