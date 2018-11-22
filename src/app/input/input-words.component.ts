@@ -31,6 +31,10 @@ export class InputWordsComponent implements OnInit {
   exampleWordsFin3 = 'laitteisto\ntietokone\npöytätietokone\nkannettava\ntabletti\nkeskusyksikkö\nprosessori\nnäppäimistö\nmikrofoni\nemolevy\nnäyttö\nhiiri\nkaiutin\nkiintolevy\nkosketusnäyttö\ntulostin\nkuulokkeet\nmuistitikku\nkeskusmuisti\nskanneri\nskanneri\nmuistia\nmuistikortti\nlangaton\nvirtalähde\nverkkoyhteys\nsuorituskyky\nohjelmistot\nkäyttöjärjestelmä\nkäyttöliittymä\ntietokanta\nhakemus\nohjelma\nohjelmointikieli\nyhteensopivuus\nasetukset\nkuvankäsittelyohjelma\nlaskentataulukko\npäivitys\najuri\nviimeisin versio\nohjelmoida\nohjelmoija\nasenna\ntietokonepeli\ntekstieditori\nesitysohjelma\npäivitä\ntallentaa\nsurffata\nselain\nverkkosivusto\nnopeus\nyhteys\nhakukone\nblogi\ntietoliikenneyhteyden\nlähiverkko\npilvipalvelu\nteollisuuden internet\nesineiden internet\nohjelmointi\nyhteensopiva\nasennus\nverkkoyhteys\nspam\nhaku\nverkkokaupan\nkiinteä yhteys\npalvelin\nmodeemi\nverkkokauppa\nlinkki\nsosiaalinen media\nmobiililaajakaista\nlaajakaista\nyksityisyys\nvirustentorjuntaohjelma\npalomuuri\nsalasana\nkäyttäjätunnus\nväärentämisohjelma\nvirus\nvarmuuskopio\nsuojella\nhakkeri\nnäytönsäästäjä\nvirransäästötila\nkahden tekijän todennus\nmurtautua tietojärjestelmään\nkirjaudu lepotilaan\nkirjaudu ulos\navoimen lähdekoodin\nsormenjälkitunnistin';
   // tslint:disable-next-line:max-line-length
   exampleWordsSwe3 = 'hårdvara\nen dator\nen stationär dator\nen bärbar\nen padda\nen centralenhet\nen processor\nett tangentbord\nen mikrofon\nett moderkort\nen skärm\nen mus\nen högtalare\nen hårddisk\nen pekskärm\nen skrivare\nhörlurar\nen minnespinne\nett centralminne\nen bildläsare\nen skanner\nett minne\nett minneskort\ntrådlös\nströmkälla\nen nätpinne\nprestanda\nmjukvara\nett operativsystem\nett användargränssnitt\nen databas\nen applikation\nett program\nett programspråk\nkompatibilitet\ninställningar\nett bildbehandlingsprogram\nett kalkylprogram\nuppdatering\nen drivrutin\nden senaste versionen av\nprogrammera\nen programmerare\ninstallera\nett dataspel\nett textbehandlingsprogram\nett presentationsprogram\nuppdatera\nlagra\nnätsurfa\nen bläddrare\nen hemsida\nen hastighet\nen anslutning\nen sökmaskin\nen blogg\ndatakommunikationsförbindelse\nett lokalt nät\nen molntjänst\nindustriellt internet\nsakernas internet\nprogrammering\nkompatibel\ninstallering\nen nätförbindelse\nskräppost\nsöka\nnäthandel\nen fast förbindelse\nen server\nett modem\nen nätbutik\nen länk\nsociala medier\nmobilt bredband\nett bredband\ndatasäkerhet\nett antivirusprogram\nen brandmur\nett lösenord\nett användarnamn\nett sabotageprogram\nett virus\nsäkerhetskopiera\nskydda\nen hackare\nen skärmsläckare\nströmsparläge\ntvåfaktorsautenticering\nbryta sig in i ett datasystem\nlogga in sig viloläge\nlogga ut sig\nöppen källkod\nen fingeravtrycksläsare';
+  // tslint:disable-next-line:max-line-length
+  exampleWordsFin4 = 'asiakas\nehto\netsiä\nhinta\nkehitys\nkilpailu\nkuluttaja\nkulutus\nvierailija\nkäydä kaupaksi\nliikevaihto\nliike\nmaksutapa\nmyydä\nmyyjä\nmyynti\nostaja\nostos\npalvelu\ntavara\ntehdä ostoksia\ntilata\ntoimitus\ntuote\ntutkimus\nvertailla\nviranomainen';
+  // tslint:disable-next-line:max-line-length
+  exampleWordsSwe4 = 'kund\nvillkor\nsöka\npris\nutveckling\nkonkurrens\nkonsument\nkonsumtion\nbesökare\ngå åt\nomsättning\nföretag\nbetalningsmedel\nsälja\nförsäljare\nförsäljning\nköpare\nuppköp\ntjänst\nvara\nhandla\nbeställa\nleverans\nprodukt\nundersökning\njämföra\nmyndighet';
 
   ngOnInit(): void {
     // this.useOnlyGuessWords = true;
@@ -96,6 +100,10 @@ export class InputWordsComponent implements OnInit {
 
   useExampleWords(option: number) {
     switch (option) {
+      case -1:
+        this.myLanguageWords = 'testi\ntesti1\ntesti2\ntesti3';
+        this.learnLanguageWords = 'test\ntest1\ntest2\ntest3';
+        break;
       case 0:
         this.myLanguageWords = this.exampleWordsFin;
         this.learnLanguageWords = this.exampleWordsSwe;
@@ -109,8 +117,8 @@ export class InputWordsComponent implements OnInit {
         this.learnLanguageWords = this.exampleWordsSwe3;
         break;
       case 3:
-        this.myLanguageWords = 'testi\ntesti1\ntesti2\ntesti3';
-        this.learnLanguageWords = 'test\ntest1\ntest2\ntest3';
+        this.myLanguageWords = this.exampleWordsFin4;
+        this.learnLanguageWords = this.exampleWordsSwe4;
         break;
       default:
         console.error('unknown option: ' + option);
