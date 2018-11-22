@@ -23,6 +23,7 @@ OMINAISUUS:
 * jos sanan saa osittain oikein, anna piste tai jotain? anna yrittää uudelleen. ehkä se oli typo.
 * exporttaa tulokset taulukkoon. csv-tiedostoksi vaikka.
 * compare to past results your score etc.
+* show score result on the right-side always.
 
 BUG:
 * monivalinta tehtävä antaa samalla kielellä vastaukset kuin otsikko.
