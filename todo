@@ -24,6 +24,7 @@ OMINAISUUS:
 * exporttaa tulokset taulukkoon. csv-tiedostoksi vaikka.
 * compare to past results your score etc.
 * show score result on the right-side always.
+* use better formatting for inputting sets. -> json.
 
 BUG:
 * monivalinta tehtävä antaa samalla kielellä vastaukset kuin otsikko.
