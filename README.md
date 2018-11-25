@@ -23,9 +23,9 @@ Install required modules from terminal/commandline in project root directory wit
 
 
 
-## Includes WordsetParser
+## Includes WordJsonParser
 
-is located in /wordJsonParser/
+WordJsonParser is simple Node.js script that combines two textfiles to one json. It is used to create ready-made wordsets for use. It is located at /wordJsonParser/
 
 run `npm install` to install required packages. run with `node parser.js` Extra parameters found with `--help`.
 
