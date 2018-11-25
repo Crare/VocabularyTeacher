@@ -22,7 +22,28 @@ You need to install [npm](https://www.npmjs.com/get-npm) and [nodejs](https://no
 Install required modules from terminal/commandline in project root directory with command `npm install`. Run the project with `npm start`. App should be running at http://localhost:4200/
 
 
-------------- generated info below: -------------
+
+## Includes WordsetParser
+
+is located in /wordJsonParser/
+
+run `npm install` to install required packages. run with `node parser.js` Extra parameters found with `--help`.
+
+### parser parameters:
+
+`--help` show options for parameters.
+
+`--path1 <pathToFile1>` Path for language1 textfile. [default: "./wordsets/set1/fin.txt"]
+
+`--path2 <pathToFile2>` Path for language1 textfile. [default: "./wordsets/set1/swe.txt"]
+
+`--outputpath <pathForOutputFile>` Output path for json. [default: "../src/assets/wordsets/words1.json"]
+
+
+
+
+
+------------- angular-cli generated content below: -------------
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.6.
 
