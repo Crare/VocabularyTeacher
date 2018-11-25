@@ -1,0 +1,92 @@
+laitteisto
+tietokone
+pöytätietokone
+kannettava
+tabletti
+keskusyksikkö
+prosessori
+näppäimistö
+mikrofoni
+emolevy
+näyttö
+hiiri
+kaiutin
+kiintolevy
+kosketusnäyttö
+tulostin
+kuulokkeet
+muistitikku
+keskusmuisti
+skanneri
+muistia
+muistikortti
+langaton
+virtalähde
+verkkoyhteys
+suorituskyky
+ohjelmistot
+käyttöjärjestelmä
+käyttöliittymä
+tietokanta
+hakemus
+ohjelma
+ohjelmointikieli
+yhteensopivuus
+asetukset
+kuvankäsittelyohjelma
+laskentaohjelma
+päivitys
+ajuri
+viimeisin versio
+ohjelmoida
+ohjelmoija
+asenna
+tietokonepeli
+tekstieditori
+esitysohjelma
+päivitä
+tallentaa
+surffata
+selain
+kotisivu
+nopeus
+yhteys
+hakukone
+blogi
+tietoliikenneyhteys
+lähiverkko
+pilvipalvelu
+teollisuuden internet
+esineiden internet
+ohjelmointi
+yhteensopiva
+asennus
+verkkoyhteys
+roskaposti
+haku
+kiinteä yhteys
+palvelin
+modeemi
+verkkokauppa
+linkki
+sosiaalinen media
+mobiililaajakaista
+laajakaista
+yksityisyys
+virustentorjuntaohjelma
+palomuuri
+salasana
+käyttäjätunnus
+väärentämisohjelma
+virus
+varmuuskopio
+suojella
+hakkeri
+näytönsäästäjä
+virransäästötila
+kaksivaiheinen tunnistautuminen
+murtautua tietojärjestelmään
+kirjaudu lepotilaan
+kirjaudu ulos
+avoin lähdekoodi
+sormenjälkitunnistin

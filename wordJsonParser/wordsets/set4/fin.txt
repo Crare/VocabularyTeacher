@@ -1,0 +1,27 @@
+asiakas
+ehto
+etsiä
+hinta
+kehitys
+kilpailu
+kuluttaja
+kulutus
+vierailija
+käydä kaupaksi
+liikevaihto
+liike
+maksutapa
+myydä
+myyjä
+myynti
+ostaja
+ostos
+palvelu
+tavara
+tehdä ostoksia
+tilata
+toimitus
+tuote
+tutkimus
+vertailla
+viranomainen

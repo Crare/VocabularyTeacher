@@ -11,3 +11,17 @@ export class Word {
       this.secondLanguageWord = secondLanguageWord;
   }
 }
+
+// export class Word {
+//   lang1: string;
+//   lang2: string;
+//   correct = 0;
+//   incorrect = 0;
+//   checked = 0;
+//   score: number;
+
+//   constructor(lang1: string, lang2: string) {
+//       this.lang1 = lang1;
+//       this.lang2 = lang2;
+//   }
+// }

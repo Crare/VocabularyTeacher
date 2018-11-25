@@ -1,9 +1,14 @@
 import { Component, Input, Output, OnInit } from '@angular/core';
 import { Word } from './Word';
+import { HttpClient } from '@angular/common/http';
+import { WordsetService, Config } from '../wordset-service/wordset-service';
+
+
 
 @Component({
   selector: 'app-input-words',
-  templateUrl: './input-words.component.html'
+  templateUrl: './input-words.component.html',
+  providers: [WordsetService]
 })
 export class InputWordsComponent implements OnInit {
   @Input() myLanguageWords;
@@ -36,10 +41,24 @@ export class InputWordsComponent implements OnInit {
   // tslint:disable-next-line:max-line-length
   exampleWordsSwe4 = 'kund\nvillkor\nsöka\npris\nutveckling\nkonkurrens\nkonsument\nkonsumtion\nbesökare\ngå åt\nomsättning\nföretag\nbetalningsmedel\nsälja\nförsäljare\nförsäljning\nköpare\nuppköp\ntjänst\nvara\nhandla\nbeställa\nleverans\nprodukt\nundersökning\njämföra\nmyndighet';
 
+  constructor(private wordsetService: WordsetService) {}
+
   ngOnInit(): void {
     // this.useOnlyGuessWords = true;
     // this.everySecondGuessWord = true;
     // this.debugSkip(1, 3); // TODO: only for debugging, remove after!
+    // this._http.get('assets/fin.txt').subscribe(data => {
+    //   console.log(data);
+    // });
+    this.getWordset();
+
+  }
+
+  getWordset() {
+    this.wordsetService.getWordset(1)
+      .subscribe((wordset: Config) => {
+        console.log(wordset);
+      });
   }
 
   debugSkip(exampleOption: number, amountOfTimesWordCorrect: number) {

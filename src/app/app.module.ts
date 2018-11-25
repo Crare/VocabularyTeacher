@@ -2,6 +2,7 @@ import { SelectWordComponent } from './input/tester/select_word/select_word.comp
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { InputWordsComponent } from './input/input-words.component';
@@ -20,6 +21,7 @@ import { TesterComponent } from './input/tester/tester.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     FormsModule
   ],
   providers: [],

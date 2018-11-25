@@ -25,6 +25,7 @@ OMINAISUUS:
 * compare to past results your score etc.
 * show score result on the right-side always.
 * use better formatting for inputting sets. -> json.
+* show right answer on multiselection
 
 BUG:
 * monivalinta tehtävä antaa samalla kielellä vastaukset kuin otsikko.
@@ -32,17 +33,23 @@ BUG:
 
 MUUTA/VAIHDA:
 * korvaa servicellä ja observer objectilla:  wordchange
-* avoimen lähdekoodin = avoin lähdekoodi
+
+
+
+
+
+DONE:
+* logga in i vilosäge ?
+* skanneri kahteen kertaan?
+* hårddisk kiintolevy -> kovalevy? sama juttu
+* laskentataulukko -> laskentaohjelma
+* spam -> roskaposti  = skräppost
+* näthandel
+* tietoliikenneyhteys ei tietoliikenneyhteyden
+* hemsida verkkosivu, vaiko kotisivu?
+* tvåfaktorsautenticering = kaksivaiheinen tunnistautuminen
+* surffata = nätsurfa ?
+* muistia = ett minne ?
 * asenta_a_ = installera
 * päivitä_ä_ = uppdatera
-* muistia = ett minne ?
-* surffata = nätsurfa ?
-* spam -> roskaposti  = skräppost
-* tvåfaktorsautenticering = kaksivaiheinen tunnistautuminen
-* hemsida verkkosivu, vaiko kotisivu?
-* tietoliikenneyhteys ei tietoliikenneyhteyden
-* näthandel
-* logaa in i vilosäge ?
-* laskentataulukko -> laskentaohjelma
-* hårddisk kiintolevy -> kovalevy?
-* skanneri kahteen kertaan?
+* avoimen lähdekoodin = avoin lähdekoodi
