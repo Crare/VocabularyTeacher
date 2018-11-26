@@ -4,28 +4,30 @@ import { HttpClient } from '@angular/common/http';
 @Injectable()
 export class WordsetService {
 
-  wordset1fin = 'assets/wordsets/set1/fin.json';
-  wordset1swe = 'assets/wordsets/set1/swe.txt';
+  private wordset1 = 'assets/wordsets/words1.json';
+  private wordset2 = 'assets/wordsets/words2.json';
+  private wordset3 = 'assets/wordsets/words3.json';
+  private wordset4 = 'assets/wordsets/words4.json';
+  private wordset5 = 'assets/wordsets/words5.json';
 
   constructor(private http: HttpClient) {}
 
   getWordset(set: number) {
-    // let urlfin = '';
-    // let urlswe = '';
-    // switch (set) {
-    //   case 1:
-    //   urlfin = this.wordset1fin;
-    //   urlswe = this.wordset1swe;
-    //   break;
-    //   default:
-    //     console.error('unknown wordset number!');
-    // }
-    return this.http.get(this.wordset1fin);
+    switch (set) {
+      case 1:
+        return this.http.get(this.wordset1);
+      case 2:
+        return this.http.get(this.wordset2);
+      case 3:
+        return this.http.get(this.wordset3);
+      case 4:
+        return this.http.get(this.wordset4);
+      case 5:
+        return this.http.get(this.wordset5);
+      default:
+        console.error('unknown wordset number!');
+    }
+    return this.http.get(this.wordset1);
   }
 
-}
-
-export interface Config {
-  heroesUrl: string;
-  textfile: string;
 }

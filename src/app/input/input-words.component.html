@@ -3,22 +3,25 @@
 <div class="container" *ngIf="!testing">
   <div class="row">
     <div class="col-sm-12">
-      <button class="btn btn-primary" (click)="useExampleWords(0)">Use example fin/swe words (set of 26 words)</button>
+      <button class="btn btn-primary" (click)="useExampleWords(1)">Use example fin/swe words (set of 26 words)</button>
       <br>
       <br>
-      <button class="btn btn-primary" (click)="useExampleWords(1)">Use second fin/swe set of words (set of 29 words)</button>
+      <button class="btn btn-primary" (click)="useExampleWords(2)">Use second fin/swe set of words (set of 29 words)</button>
       <br>
       <br>
-      <button class="btn btn-primary" (click)="useExampleWords(2)">Use third fin/swe set of words (set of 94 words)</button>
+      <button class="btn btn-primary" (click)="useExampleWords(3)">Use third fin/swe set of words (set of 94 words)</button>
       <br>
       <br>
-      <button class="btn btn-primary" (click)="useExampleWords(3)">Use fourth fin/swe set of words (set of 27 words)</button>
+      <button class="btn btn-primary" (click)="useExampleWords(4)">Use fourth fin/swe set of words (set of 27 words)</button>
+      <br>
+      <br>
+      <button class="btn btn-primary" (click)="useExampleWords(5)">Use fifth fin/swe set of words (set of 31 words)</button>
       <br>
       <br>
     </div>
     <div class="col-sm-6">
       <div class="form-group">
-        <label class="bold" for="mylanguage">Words in your language</label><br>
+        <label class="bold" for="mylanguage">Words in your language.</label><br>
         <textarea class="form-control" id="mylanguage" rows="10" cols="50" [(ngModel)]="myLanguageWords"></textarea>
       </div>
     </div>
