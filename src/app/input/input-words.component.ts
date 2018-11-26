@@ -50,7 +50,7 @@ export class InputWordsComponent implements OnInit {
     // this._http.get('assets/fin.txt').subscribe(data => {
     //   console.log(data);
     // });
-    this.getWordset();
+    // this.getWordset();
 
   }
 

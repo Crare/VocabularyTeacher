@@ -1,3 +1,6 @@
+// example run code:
+// node parser.js --path1 ./wordsets/set5/fin.txt --path2 ./wordsets/set5/swe.txt --outputpath ../src/assets/wordsets/words5.json
+
 const fs = require('fs');
 
 var yargs = require('yargs').options({
