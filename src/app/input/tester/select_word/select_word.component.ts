@@ -49,4 +49,11 @@ export class SelectWordComponent {
     this.answerer.emit(new Answer(this.guessForeingLanguage ? selectedAnswer.secondLanguageWord : selectedAnswer.firstlanguageWord, this.guessForeingLanguage));
   }
 
+  seeRightAnswer() {
+    alert('Right answer: ' + this.word.firstlanguageWord + ' = ' + this.word.secondLanguageWord);
+    this.answerer.emit(new Answer('go_to_new_word', this.guessForeingLanguage));
+    this.word = undefined;
+    this.falseWords = undefined;
+  }
+
 }
