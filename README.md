@@ -6,13 +6,17 @@ Learn any language vocabulary, if you have the words, just add them here and thi
 
 <img src="https://github.com/Crare/VocabularyTeacher/blob/master/src/assets/img/input_words.png" width="1000">
 
-**writing test, randomly switching between both languages.**
+**Writing test, randomly switching between both languages.**
 
 <img src="https://github.com/Crare/VocabularyTeacher/blob/master/src/assets/img/write_words.png" width="400">
 
-**multiselection test, randomly switching between both languages.**
+**Multiselection test, randomly switching between both languages.**
 
 <img src="https://github.com/Crare/VocabularyTeacher/blob/master/src/assets/img/select_word.png" width="600">
+
+**Check results after test, see what words you have to improve more.**
+
+<img src="https://github.com/Crare/VocabularyTeacher/blob/master/src/assets/img/show_results.png" width="600">
 
 
 ## setup
